@@ -2,8 +2,14 @@
 
 @media (min-width: 801px) {
 
+    *{
+        list-style: none;
+        color: #ffffff;
+    }
+
     body {
         height: 100vh;
+        min-height: 100%;
         overflow: hidden;
         font-family: 'Poppins', sans-serif;
         background-color: rgb(61, 61, 61);
@@ -234,29 +240,18 @@
         width: 100%;
         padding: 0px 40px 0px 40px;
     }
-    
-    .redes_sociais {
-        background-color: rgba(0, 0, 0, 0.438);
-        display: grid;
-        justify-content: center;
-        margin-top: 50px;
-        height: 150px;
-    }
-    
-    .redes_sociais h2 {
-        text-align: center;
-        color: #ffffff;
-    }
-    
+
     .div_rs {
         display: flex;
-        column-gap: 2rem;
         justify-content: center;
+        height: 50px;
+        align-items: center;
     }
+
 
     .div_rs:has(.sociais:hover) .sociais:not(:hover) {
         scale: 0.8;
-        opacity: 0.8;
+        opacity: 9;
         filter: blur(2px);
     }
     
@@ -272,7 +267,7 @@
     }
     
     .sociais img {
-        width: 60px;
+        width: 40px;
         display: block;
         margin: 0 auto;
         opacity: 1 ;
@@ -280,19 +275,67 @@
     }
     
     .sociais .in:hover {
-        width: 65px;
+        width: 45px;
         filter: drop-shadow(0.9px 0.9px 7px rgb(174, 0, 255));
     }
     
     .sociais .tik:hover {
-        width: 65px;
+        width: 45px;
         filter: drop-shadow(0.9px 0.9px 7px rgb(255, 255, 255));
     }
-    
-    .sociais .fac:hover {
-        width: 65px;
-        filter: drop-shadow(0.9px 0.9px 7px rgb(0, 38, 255));
+
+    .section_integrantes {
+        background: linear-gradient(#0b3749 0%, #000000 100%);
     }
+
+    footer {
+        position: relative;
+        height: 320px;
+        padding-bottom: 15px;
+        background-color: #000000;
+    }
+
+    footer section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    footer h2 {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+
+    footer section p {
+        line-height: 0.5;
+    }
+
+    footer section p {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .copy {
+        opacity: 0.5;
+    }
+
+    .int_turma {
+        display: flex;
+        justify-content: center;
+        display: flex;
+    }
+
+    .int_turma ul {
+        text-align: center;
+        padding: 0;
+        width: 250px;
+    }
+
+    .int_turma ul li {
+        text-align: center;
+    }
+
 }
 
   /*Formatação Dispositivos moveis*/
