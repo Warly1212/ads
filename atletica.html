@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlética - ADS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagens/logo_pading.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header class="cabecalho" id="cab1">
+
+            <div class="cab1">
+
+                <div class="ads">
+                    <a href="index.html"><img class="adss" src="imagens/logo_ads.svg" alt="" id="ads_logoo"></a>
+                </div>
+
+                <div class="elements_list">
+                    <ul class="nao_ordenada">
+                        <li class="list_itens"><a href="index.html">INÍCIO</a></li>
+                        <li class="list_itens"><a href="noticias.html">NOTÍCIAS</a></li>
+                        <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
+                        <li class="list_itens"><a class="atletica_text" href="atletica.html">ATLÉTICA</a></li>
+                        <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
+                    </ul>
+                </div>
+
+                <div class="input_d" id="input_dd">
+                    <input type="text" placeholder="Buscar...">
+
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <header class="cab2">
+            
+
+            <h2 class="tt_cab2">ATLÉTICA</h2>
+
+            <div class="inp">
+                <button type="submit" onclick="inp_variavel()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        </header>
+
+        <button class="bt_menu" id="toggleButton" onclick="toggleList()"><img src="imagens/icon_menu.png" alt="menu"></button>
+
+        <div class="div_inp" id="inputs">
+            <div class="inputtt" id="inputtt">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="menu-overlay" id="menuOverlay">
+            <ul class="list_celular">
+                <li class="list_itens"><a class="inicio_text" href="index.html">INÍCIO</a></li>
+                <li class="list_itens"><a href="noticias.html">NOTÍCIAS</a></li>
+                <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
+                <li class="list_itens"><a href="atletica.html">ATLÉTICA</a></li>
+                <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
+            </ul>
+
+            <button class="close-button" onclick="toggleList()">×</button>
+        </div>
+
+
+        <div class="menu_inp" id="menu_inp" onclick="inp_variavel()"></div>
+
+        <div class="menu-background" id="menuBackground" onclick="toggleList()"></div>
+
+        <button class="voltar_ant">Voltar</button>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
