@@ -42,13 +42,9 @@
     .insta_lg {
         display: none;
     }
-
-    .voltar_ant {
-        display: none;
-    }
     
     .cabecalho {
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.562);
         background-size: cover;
         align-items: center;
         position: fixed;
@@ -82,7 +78,7 @@
     
     .input_d input {
         width: 160px;
-        height: 27px;
+        height: 25px;
         outline: none;
         border: none;
         border-radius: 10px;
@@ -112,7 +108,7 @@
     .input_d button {
         position: absolute;
         background-color: transparent;
-        height: 29px;
+        height: 27px;
         color: white;
         border: none;
         cursor: pointer;
@@ -298,7 +294,6 @@
     * {
         color: #ffffff;
         border: none;
-        background: none;
     }
 
     body {
@@ -328,13 +323,13 @@
         position: fixed;
         top: 0px;
         left: 0;
-        width: 150px;
+        width: 40%;
         height: 100%;
         background: rgba(29, 29, 29, 0.959);
         display: none;
         color: white;
         display: grid;
-        z-index: 1500;
+        z-index: 1100;
     }
 
     .menu-overlay ul {
@@ -367,10 +362,11 @@
         border: none;
         padding: 0;
         cursor: pointer;
+        
     }
 
     .bt_menu img {
-        width: 25px;
+        width: 20px;
     }
 
     .insta_lg {
@@ -381,7 +377,7 @@
         background-color: transparent;
         right: 5%;
         top: 18.5px;
-        width: 25px;
+        width: 100%;
         height: 25px;
         z-index: 1010;
         background: none;
@@ -391,9 +387,8 @@
     }
 
     .insta_lg img {
-        width: 25px;
+        width: 20px;
     }
-
 
     .menu-background {
         position: fixed;
@@ -401,7 +396,7 @@
         width: 100%;
         height: 100%;
         display: none;
-        z-index: 1000;
+        z-index: 1001;
     }
 
     .list_celular {
@@ -504,7 +499,7 @@
     
     .inputtt input {
         width: 220px;
-        height: 31px;
+        height: 27px;
         outline: none;
         border: none;
         border-radius: 15px;
@@ -556,23 +551,19 @@
 
     .ads a img {
         width: 45px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .input_d {
         display: flex;
         justify-content: end;
         align-items: center;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        width: 100%;
+        margin-bottom: 10px;
     }
     
     .input_d input {
-        display: grid;
-        justify-content: center;
-        width: 240px;
-        height: 30px;
+        width: 200px;
+        height: 27px;
         outline: none;
         border: none;
         border-radius: 10px;
@@ -602,7 +593,7 @@
     .input_d button {
         position: absolute;
         background-color: transparent;
-        height: 31px;
+        height: 28px;
         color: white;
         border: none;
         cursor: pointer;
@@ -671,30 +662,6 @@
         z-index: 2;
         border: none;
         font-size: 17px;
-    }
-
-    .voltar_ant {
-        position: fixed;
-        background-color: #00ffc879;
-        color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 55px;
-        height: 25px;
-        z-index: 200;
-        margin-top: 60px;
-        border-radius: 5px;
-        left: 5%;
-    }
-
-    .voltar_ant:active {
-        opacity: 0.5;
-        color: #ffffff5b;
-    }
-
-    footer {
-        
     }
 
 }
