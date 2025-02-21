@@ -301,16 +301,6 @@
         background: none;
     }
 
-    *:focus {
-        outline: none;
-        background-color: transparent;
-    }
-
-    *:active {
-        outline: none;
-        background-color: transparent;
-    }
-
     body {
         height: 100vh;
         overflow: hidden;
@@ -344,7 +334,7 @@
         display: none;
         color: white;
         display: grid;
-        z-index: 1100;
+        z-index: 1500;
     }
 
     .menu-overlay ul {
@@ -377,7 +367,6 @@
         border: none;
         padding: 0;
         cursor: pointer;
-        
     }
 
     .bt_menu img {
@@ -404,6 +393,7 @@
     .insta_lg img {
         width: 25px;
     }
+
 
     .menu-background {
         position: fixed;
@@ -701,6 +691,10 @@
     .voltar_ant:active {
         opacity: 0.5;
         color: #ffffff5b;
+    }
+
+    footer {
+        
     }
 
 }
