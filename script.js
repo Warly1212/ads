@@ -1,30 +1,31 @@
 function toggleList() {
     const menuOverlay = document.getElementById('menuOverlay');
     const menuBackground = document.getElementById('menuBackground');
-    if (menuOverlay.style.display === 'none' || menuOverlay.style.display === '') {
-        menuOverlay.style.display = 'flex';
-        menuBackground.style.display = 'block';
+    if (!menuOverlay.classList.contains('active') && !menuBackground.classList.contains('active')) {
+        menuOverlay.classList.add('active');
+        menuBackground.classList.add('active');
     } else {
-        menuOverlay.style.display = 'none';
-        menuBackground.style.display = 'none';
+        menuOverlay.classList.remove('active');
+        menuBackground.classList.remove('active');
     }
 }
 
-function inp_variavel() {
-    const inputs = document.getElementById('inputs');
-    const menu_inp = document.getElementById('menu_inp');
-    if (inputs.style.display === 'none' || inputs.style.display === '') {
-        inputs.style.display = 'flex';
-        menu_inp.style.display = 'block';
-        
+function toggleList() {
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuBackground = document.getElementById('menuBackground');
+    if (!menuOverlay.classList.contains('active') && !menuBackground.classList.contains('active')) {
+        menuOverlay.classList.add('active');
+        menuBackground.classList.add('active');
     } else {
-        inputs.style.display = 'none';
-        menu_inp.style.display = 'none';
+        menuOverlay.classList.remove('active');
+        menuBackground.classList.remove('active');
     }
 }
 
 window.onload = function() {
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuBackground = document.getElementById('menuBackground');
+    menuOverlay.classList.remove('active');
+    menuBackground.classList.remove('active');
     document.getElementById('menu_inp').style.display = 'none';
-    document.getElementById('menuOverlay').classList.remove('active');
-    document.getElementById('menuBackground').classList.remove('active');
 }
