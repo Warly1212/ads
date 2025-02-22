@@ -5,6 +5,7 @@
     *{
         list-style: none;
         color: #ffffff;
+        text-decoration: none;
     }
 
     body {
@@ -129,7 +130,7 @@
     }
     
     .input_d button:hover {
-        background-color: #00ffd58a;
+        background-color: #126383;
         color: #ffffff;
         border-radius: 0px 10px 10px 0px;
         
@@ -176,23 +177,23 @@
     /*cabeçalho cor*/
     
     .list_itens .inicio_text {
-        color: #00ffd5;
-        border-bottom: 0.1rem solid #00ffd554;
+        color: #1999cc;
+        border-bottom: 0.1rem solid #126383;
     }
     
     .list_itens .atletica_text {
-        color: #00ffd5;
-        border-bottom: 0.1rem solid #00ffd554;
+        color: #1999cc;
+        border-bottom: 0.1rem solid #126383;
     }
     
     .list_itens .noticias_text {
-        color: #00ffd5;
-        border-bottom: 0.1rem solid #00ffd554;
+        color: #1999cc;
+        border-bottom: 0.1rem solid #126383;
     }
     
     .list_itens .sobre_text {
-        color: #00ffd5;
-        border-bottom: 0.1rem solid #00ffd554;
+        color: #1999cc;
+        border-bottom: 0.1rem solid #126383;
     }
     
     .conteudo {
@@ -222,7 +223,7 @@
         width: 30%;
         background-color: #00000073;
         border-radius: 5px;
-        border: solid 1px #00ffea;
+        border: solid 1px #126383;
     }
     
     .div_sobre p {
@@ -241,100 +242,57 @@
         padding: 0px 40px 0px 40px;
     }
 
+    
+    footer {
+        background-color: #070d22;
+        height: 190px;
+    }
     .div_rs {
         display: flex;
         justify-content: center;
         height: 50px;
         align-items: center;
+        padding-top: 20px;
     }
 
-
-    .div_rs:has(.sociais:hover) .sociais:not(:hover) {
-        scale: 0.8;
-        opacity: 9;
-        filter: blur(2px);
-    }
-    
     .sociais {
-        transition:
-            scale 0.25s ease-in,
-            opacity 0.25s ease-in,
-            filter 0.25s ease-in;
-        
-        &:hover {
-            scale: 1;
-        }
+        width: 50px;
+        display: flex;
+        justify-content: space-around;
     }
     
-    .sociais img {
-        width: 40px;
-        display: block;
-        margin: 0 auto;
-        opacity: 1 ;
-        transition: 0.3s ease;
-    }
-    
-    .sociais .in:hover {
-        width: 45px;
-        filter: drop-shadow(0.9px 0.9px 7px rgb(174, 0, 255));
-    }
-    
-    .sociais .tik:hover {
-        width: 45px;
-        filter: drop-shadow(0.9px 0.9px 7px rgb(255, 255, 255));
+    .sociais i {
+        display: grid;
+        color: #000000;
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        place-items: center;
+        border-radius: 50%;
+        text-decoration: none;
     }
 
-    .section_integrantes {
-        background: linear-gradient(#0b3749 0%, #000000 100%);
+    .sociais i:hover {
+        opacity: 0.8;
+        color: #126383;
     }
 
-    footer {
-        position: relative;
-        height: 320px;
-        padding-bottom: 15px;
-        background-color: #000000;
+    .footer_top {
+        background-color: #126383;
+        width: 100%;
+        height: 10px;
     }
 
-    footer section {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    footer h2 {
+    footer p {
         text-align: center;
-        color: #ffffff;
-        padding-top: 10px;
-    }
-
-
-    footer section p {
-        line-height: 0.5;
-    }
-
-    footer section p {
-        text-align: center;
-        margin-bottom: 12px;
+        line-height: 0.7;
     }
 
     .copy {
-        opacity: 0.5;
+        opacity: 0.8;
     }
 
-    .int_turma {
-        display: flex;
-        justify-content: center;
-        display: flex;
-    }
-
-    .int_turma ul {
-        text-align: center;
-        padding: 0;
-        width: 250px;
-    }
-
-    .int_turma ul li {
-        text-align: center;
-    }
 
 }
 
@@ -738,6 +696,61 @@
     .voltar_ant:active {
         opacity: 0.5;
         color: #ffffff5b;
+    }
+
+    footer {
+        background-color: #070d22;
+        height: 160px;
+    }
+    .div_rs {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .sociais {
+        width: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sociais i {
+        display: grid;
+        color: #000000;
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        place-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .sociais i:active {
+        opacity: 0.8;
+        color: #126383;
+    }
+
+    .footer_top {
+        background-color: #126383;
+        width: 100%;
+        height: 10px;
+    }
+
+    footer p {
+        text-align: center;
+        line-height: 0.1;
+        font-size: 12px;
+    }
+
+    .footer_turma {
+        line-height: 1.2;
+    }
+
+    .copy {
+        opacity: 0.8;
     }
 
 }
