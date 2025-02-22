@@ -335,6 +335,20 @@
     }
 
     .menu-overlay {
+        display: none;
+    }
+    .menu-overlay.active {
+        display: flex;
+    }
+    
+    .menu-background {
+        display: none;
+    }
+    .menu-background.active {
+        display: block;
+    }
+
+    .menu-overlay {
         position: fixed;
         top: 0px;
         left: 0;

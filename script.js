@@ -27,4 +27,6 @@ window.onload = function() {
     document.getElementById('menuOverlay').style.display = 'none';
     document.getElementById('menuBackground').style.display = 'none';
     document.getElementById('menu_inp').style.display = 'none';
+    document.getElementById('menuOverlay').classList.remove('active');
+    document.getElementById('menuBackground').classList.remove('active');
 }
