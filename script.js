@@ -1,31 +1,30 @@
 function toggleList() {
     const menuOverlay = document.getElementById('menuOverlay');
     const menuBackground = document.getElementById('menuBackground');
-    if (!menuOverlay.classList.contains('active') && !menuBackground.classList.contains('active')) {
-        menuOverlay.classList.add('active');
-        menuBackground.classList.add('active');
+    if (menuOverlay.style.display === 'none' || menuOverlay.style.display === '') {
+        menuOverlay.style.display = 'flex';
+        menuBackground.style.display = 'block';
     } else {
-        menuOverlay.classList.remove('active');
-        menuBackground.classList.remove('active');
+        menuOverlay.style.display = 'none';
+        menuBackground.style.display = 'none';
     }
 }
 
-function toggleList() {
-    const menuOverlay = document.getElementById('menuOverlay');
-    const menuBackground = document.getElementById('menuBackground');
-    if (!menuOverlay.classList.contains('active') && !menuBackground.classList.contains('active')) {
-        menuOverlay.classList.add('active');
-        menuBackground.classList.add('active');
+function inp_variavel() {
+    const inputs = document.getElementById('inputs');
+    const menu_inp = document.getElementById('menu_inp');
+    if (inputs.style.display === 'none' || inputs.style.display === '') {
+        inputs.style.display = 'flex';
+        menu_inp.style.display = 'block';
+        
     } else {
-        menuOverlay.classList.remove('active');
-        menuBackground.classList.remove('active');
+        inputs.style.display = 'none';
+        menu_inp.style.display = 'none';
     }
 }
 
 window.onload = function() {
-    const menuOverlay = document.getElementById('menuOverlay');
-    const menuBackground = document.getElementById('menuBackground');
-    menuOverlay.classList.remove('active');
-    menuBackground.classList.remove('active');
+    document.getElementById('menuOverlay').style.display = 'none';
+    document.getElementById('menuBackground').style.display = 'none';
     document.getElementById('menu_inp').style.display = 'none';
 }

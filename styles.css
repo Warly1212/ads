@@ -344,9 +344,6 @@
     .menu-background {
         display: none;
     }
-    .menu-background.active {
-        display: block;
-    }
 
     .menu-overlay {
         position: fixed;
