@@ -18,13 +18,17 @@ function click_menu() {
         }, 500);
     }
 }
+
 function inp_variavel() {
     const inputs = document.getElementById('inputs');
+    const inputField = inputs.querySelector('input');
     const menu_inp = document.getElementById('menu_inp');
     if (inputs.style.display === 'none' || inputs.style.display === '') {
-        inputs.style.display = 'flex';
         menu_inp.style.display = 'block';
-        
+        inputs.style.display = 'flex';
+        requestAnimationFrame(() => {
+            inputField.focus();  // Adiciona o foco no campo de texto
+        });
     } else {
         inputs.style.display = 'none';
         menu_inp.style.display = 'none';
