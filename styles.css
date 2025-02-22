@@ -354,7 +354,7 @@
         z-index: 2000;
         padding-left: 10%;
         width: 30%;
-        padding-top: 0px;
+        padding-top: 8%;
         height: 100%;
         display: none;
         border-right: solid 1px #ffffff5d;
@@ -374,11 +374,10 @@
     }
 
     .closee {
-        width: 22px;
-        height: 22px;
+        width: 25px;
+        height: 25px;
         display: flex;
         align-items: center;
-        margin-top: 20px;
         margin-bottom: 25px;
         border: solid 1px #fff;
         border-radius: 5px;
@@ -390,7 +389,7 @@
     }
 
     .closee i {
-        font-size: 22px;
+        font-size: 25px;
         display: flex;
     }
 
@@ -411,23 +410,25 @@
     .mobile-menu {
         position: fixed;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: transparent;
         left: 20px;
-        top: 15px;
-        width: 25px;
-        height: 25px;
+        top: 4.5%;
+        width: 27px;
+        height: 27px;
         z-index: 1050;
         background: none;
         border: none;
         padding: 0;
         cursor: pointer;
+
         
     }
 
     .mobile-menu img {
-        width: 25px;
+        width: 27px;
     }
 
     .insta_lg {
@@ -437,9 +438,9 @@
         justify-content: end;
         background-color: transparent;
         right: 20px;
-        top: 18.5px;
-        width: 25px;
-        height: 25px;
+        top: 5%;
+        width: 27px;
+        height: 27px;
         z-index: 1010;
         background: none;
         border: none;
@@ -448,7 +449,7 @@
     }
 
     .insta_lg img {
-        width: 25px;
+        width: 27px;
     }
 
     .menu-background {
@@ -593,15 +594,15 @@
 
     .ads a img {
         width: 45px;
-        margin-top: 10px;
+        padding-top: 45%;
     }
 
     .input_d {
         display: flex;
         justify-content: end;
         align-items: center;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 10%;
+        margin-top: 8%;
         width: 100%;
     }
     
