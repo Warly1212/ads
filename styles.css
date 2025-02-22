@@ -13,7 +13,7 @@
         min-height: 100%;
         overflow: hidden;
         font-family: 'Poppins', sans-serif;
-        background-color: rgb(61, 61, 61);
+        background-color: #001c2b;
         margin: 0;
     }
     main {
@@ -170,10 +170,6 @@
         color: rgb(255, 255, 255);
     }
     
-    .list_itens a:hover {
-        filter: drop-shadow(0.9px 0.9px 3px rgb(255, 255, 255));
-    }
-    
     /*cabeçalho cor*/
     
     .list_itens .inicio_text {
@@ -315,7 +311,7 @@
         height: 100vh;
         overflow: hidden;
         font-family: 'Poppins', sans-serif;
-        background-color: rgb(61, 61, 61);
+        background-color: #001c2b;
         margin: 0;
     }
 
@@ -351,7 +347,7 @@
         left: 0;
         width: 150px;
         height: 100%;
-        background: rgba(29, 29, 29, 0.959);
+        background: #0e2b3b;
         display: none;
         color: white;
         display: grid;
