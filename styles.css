@@ -74,7 +74,7 @@
         display: flex;
         align-items: center;
         
-        padding: 0px 40px 0px 40px;
+        padding: 0px 80px 0px 80px;
     }
     
     .ads {
@@ -113,17 +113,17 @@
     
     .input_d input[type="text"]:focus::placeholder {
         color: #ffffff;
-        font-size: 15px;
     }
     
     .input_d input::placeholder {
         color: #ffffff;
+        font-size: 15px;
     }
     
     .input_d button {
         position: absolute;
         background-color: transparent;
-        height: 29px;
+        height: 28px;
         color: white;
         border: none;
         cursor: pointer;
@@ -197,7 +197,7 @@
     }
     
     .conteudo {
-        padding: 80px 40px 0px 40px;
+        padding: 80px 80px 0px 80px;
     }
     
     .conteudo p {
@@ -214,7 +214,7 @@
     
     .sobre {
         display: flex;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 80px 0px 80px;
         justify-content: space-between;
         margin-top: 80px;
     }
@@ -239,7 +239,7 @@
     
     .sec_videos {
         width: 100%;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 80px 0px 80px;
     }
 
     
@@ -275,7 +275,7 @@
 
     .sociais i:hover {
         opacity: 0.8;
-        color: #126383;
+        color: #0b9bd4;
     }
 
     .footer_top {
@@ -287,6 +287,11 @@
     footer p {
         text-align: center;
         line-height: 0.7;
+    }
+
+    footer p a {
+        color: #0b9bd4;
+        text-decoration: underline;
     }
 
     .copy {
@@ -460,7 +465,7 @@
     .tt_cab2 {
         text-align: center;
         font-size: 17px;
-        color: #00ffd5;
+        color: #1999cc;
     }
 
     .inp button {
@@ -540,13 +545,14 @@
         position: absolute;
         background-color: transparent;
         height: 31px;
+        width: 35px;
         color: white;
         border: none;
         cursor: pointer;
     }
     
-    .inputtt button:hover {
-        background-color: #00ffd58a;
+    .inputtt button:active {
+        background-color: #126383;
         color: #ffffff;
         border-radius: 0px 15px 15px 0px;
         
@@ -602,19 +608,21 @@
     
     .input_d input::placeholder {
         color: #ffffff;
+        font-size: 15px;
     }
     
     .input_d button {
         position: absolute;
         background-color: transparent;
         height: 31px;
+        width: 35px;
         color: white;
         border: none;
         cursor: pointer;
     }
     
-    .input_d button:hover {
-        background-color: #00ffd58a;
+    .input_d button:active {
+        background-color: #12638393;
         color: #ffffff;
         border-radius: 0px 10px 10px 0px;
         
@@ -634,7 +642,7 @@
     }
 
     .conteudo h1 {
-        color: #00ffd5;
+        color: #126383;
     }
 
     .sobre {
@@ -649,7 +657,7 @@
     .div_sobre {
         background-color: #00000073;
         border-radius: 5px;
-        border: solid 1px #00ffea;
+        border: solid 1px #126383;
         margin-bottom: 20px;
     }
     
@@ -680,7 +688,7 @@
 
     .voltar_ant {
         position: fixed;
-        background-color: #00ffc879;
+        background-color: #126383;
         color: rgb(255, 255, 255);
         display: flex;
         align-items: center;
@@ -701,6 +709,7 @@
     footer {
         background-color: #070d22;
         height: 160px;
+        margin-top: 560px;
     }
     .div_rs {
         display: flex;
@@ -730,7 +739,7 @@
 
     .sociais i:active {
         opacity: 0.8;
-        color: #126383;
+        color: #0b9bd4;
     }
 
     .footer_top {
@@ -743,6 +752,11 @@
         text-align: center;
         line-height: 0.1;
         font-size: 12px;
+    }
+
+    footer p a {
+        color: #0b9bd4;
+        text-decoration: underline;
     }
 
     .footer_turma {
