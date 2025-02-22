@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="imagens/logo_pading.svg">
 
+    <svg class="bi bi-exclamation-triangle text-success" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"></svg>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +26,11 @@
                 </div>
                 <div class="elements_list" id="lista">
                     <ul class="nao_ordenada">
-                        <li class="list_itens"><a class="inicio_text" href="index.html">INÍCIO</a></li>
-                        <li class="list_itens"><a href="noticias.html">NOTÍCIAS</a></li>
-                        <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
-                        <li class="list_itens"><a href="atletica.html">ATLÉTICA</a></li>
-                        <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
+                        <li class="list_itens"><a class="inicio_text" href="index.html">Início</a></li>
+                        <li class="list_itens"><a href="noticias.html">Notícias</a></li>
+                        <li class="list_itens"><a href="sobre.html">Sobre</a></li>
+                        <li class="list_itens"><a href="atletica.html">Atlética</a></li>
+                        <li class="list_itens"><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
                 </div>
                 <div class="input_d">
@@ -44,23 +46,35 @@
 
         <!-- Formatação para celular -->
 
-        <button class="bt_menu" id="toggleButton" onclick="toggleList()"><img src="imagens/icon_menu.png" alt="menu"></button>
+        <button onclick="click_menu()" class="mobile-menu"><img src="imagens/icon_menu.png" alt="menu"></button>
 
-        <div class="insta_lg"><a href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1"><img src="imagens/insta_lg.png" alt=""></div>
+        <div class="insta_lg">
+            <a target="_blank" rel="sternal" href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1">
+                <img src="imagens/insta_lg.png" alt="">
+            </a>
+        </div>
+       
 
-        <div class="menu-overlay" id="menuOverlay">
-            <ul class="list_celular">
-                <li class="list_itens"><a class="inicio_text" href="index.html">INÍCIO</a></li>
-                <li class="list_itens"><a href="noticias.html">NOTÍCIAS</a></li>
-                <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
-                <li class="list_itens"><a href="atletica.html">ATLÉTICA</a></li>
-                <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
-            </ul>
+        
+        <div class="list_cell">
+            <nav>
+                <ul class="nav_list" id="nav_list">
+                    <div class="closee" onclick="click_menu()">
+                        <i class="bi bi-x"></i>
+                    </div>
 
-            <button class="close-button" onclick="toggleList()">×</button>
+                    <li><a class="inicio_text" href="index.html">Início</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="atletica.html">Atlética</a></li>
+                    <li><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <div class="menu-background" id="menuBackground" onclick="toggleList()"></div>
+       
+
+        <div class="menu-background" id="menuBackground" onclick="click_menu()"></div>
 
         <section class="conteudo">
             <h1 class="titulo_principal">Análise e Desenvolvimento de Sistemas</h1>
@@ -95,11 +109,11 @@
             <div class="footer_top"></div>
             <div class="div_rs">
                 <div class="sociais">
-                    <a href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1"><i class="bi bi-instagram"></i></a>
+                    <a target="_blank" rel="sternal" href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1"><i class="bi bi-instagram"></i></a>
                 </div>
     
                 <div class="sociais">
-                    <a href="https://www.tiktok.com/@dev.fasec?_t=ZM-8u22hPylk5l&_r=1"><i class="bi bi-tiktok"></i></a>
+                    <a target="_blank" rel="sternal" href="https://www.tiktok.com/@dev.fasec?_t=ZM-8u22hPylk5l&_r=1"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 

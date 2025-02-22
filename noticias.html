@@ -27,11 +27,11 @@
 
                 <div class="elements_list">
                     <ul class="nao_ordenada">
-                        <li class="list_itens"><a href="index.html">INÍCIO</a></li>
-                        <li class="list_itens"><a class="noticias_text" href="noticias.html">NOTÍCIAS</a></li>
-                        <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
-                        <li class="list_itens"><a href="atletica.html">ATLÉTICA</a></li>
-                        <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
+                        <li class="list_itens"><a href="index.html">Início</a></li>
+                        <li class="list_itens"><a class="noticias_text" href="noticias.html">Notícias</a></li>
+                        <li class="list_itens"><a href="sobre.html">Sobre</a></li>
+                        <li class="list_itens"><a href="atletica.html">Atlética</a></li>
+                        <li class="list_itens"><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@
         </header>
 
         <header class="cab2">
-            <h2 class="tt_cab2">NOTÍCIAS</h2>
+            <h2 class="tt_cab2">Notícias</h2>
         </header>
 
         <div class="div_inp" id="inputs">
@@ -67,24 +67,28 @@
             </button> 
         </div>
 
-        <button class="bt_menu" id="toggleButton" onclick="toggleList()"><img src="imagens/icon_menu.png" alt="menu"></button>
+        <button onclick="click_menu()" class="mobile-menu"><img src="imagens/icon_menu.png" alt="menu"></button>
 
-        <div class="menu-overlay" id="menuOverlay">
-            <ul class="list_celular">
-                <li class="list_itens"><a class="inicio_text" href="index.html">INÍCIO</a></li>
-                <li class="list_itens"><a href="noticias.html">NOTÍCIAS</a></li>
-                <li class="list_itens"><a href="sobre.html">SOBRE</a></li>
-                <li class="list_itens"><a href="atletica.html">ATLÉTICA</a></li>
-                <li class="list_itens"><a href="https://serradocarmo.edu.br">FASEC</a></li>
-            </ul>
+        <div class="list_cell">
+            <nav>
+                <ul class="nav_list" id="nav_list">
+                    <div class="closee" onclick="click_menu()">
+                        <i class="bi bi-x"></i>
+                    </div>
 
-            <button class="close-button" onclick="toggleList()">×</button>
+                    <li><a class="inicio_text" href="index.html">Início</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="atletica.html">Atlética</a></li>
+                    <li><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
+                </ul>
+            </nav>
         </div>
 
 
         <div class="menu_inp" id="menu_inp" onclick="inp_variavel()"></div>
 
-        <div class="menu-background" id="menuBackground" onclick="toggleList()"></div>
+        <div class="menu-background" id="menuBackground" onclick="click_menu()"></div>
 
         <button class="voltar_ant">Voltar</button>
 
