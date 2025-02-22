@@ -415,7 +415,7 @@
         justify-content: center;
         background-color: transparent;
         left: 20px;
-        top: 4.5%;
+        top: 25px;
         width: 27px;
         height: 27px;
         z-index: 1050;
@@ -438,7 +438,7 @@
         justify-content: end;
         background-color: transparent;
         right: 20px;
-        top: 5%;
+        top: 30px;
         width: 27px;
         height: 27px;
         z-index: 1010;
@@ -469,7 +469,6 @@
         align-items: center;
         justify-content: center;
         top: 0;
-        padding-top: 8%;
         padding-bottom: 0px;
         background-color: rgb(0, 0, 0);
     }
@@ -590,10 +589,12 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 5px;
+        margin-top: 25px;
     }
 
     .ads a img {
         width: 45px;
+        margin-top: 0;
     }
 
     .input_d {
