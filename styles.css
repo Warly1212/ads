@@ -103,6 +103,7 @@
         height: 27px;
         border-right: solid 1px;
         opacity: 0.2;
+        bacground-color: blue;
     }
 
     .excluir-x i {
