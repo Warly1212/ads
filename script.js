@@ -75,6 +75,46 @@ function acionar_input() {
     }
 }
 
+let currentIndex = 0;
+
+function moveSlide(n) {
+    const slides = document.querySelector('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.children.length;
+
+    currentIndex = (currentIndex + n + totalSlides) % totalSlides;
+    slides.style.transition = 'transform 0.5s ease-in-out'; /* Adicionando animação de transição */
+    slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    updateDots();
+}
+
+function moveSlideTo(index) {
+    const slides = document.querySelector('.carousel-slide');
+    currentIndex = index;
+    slides.style.transition = 'transform 0.5s ease-in-out';
+    slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    updateDots();
+}
+
+function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateDots();
+});
+
+
+
+
+
 
 window.onload = function() {
     document.getElementById('nav_list').style.display = 'none';

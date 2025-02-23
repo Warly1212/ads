@@ -80,6 +80,28 @@
 
         <div class="menu-background" id="menuBackground" onclick="click_menu()"></div>
 
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-slide">
+                <div class="carousel-item">
+                    <img src="imagens/Ads - Fasec 1.png" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/Ads - Fasec 2.png" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/Ads - Fasec 3.png" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="carousel-indicators">
+                <span class="dot" onclick="moveSlideTo(0)"></span>
+                <span class="dot" onclick="moveSlideTo(1)"></span>
+                <span class="dot" onclick="moveSlideTo(2)"></span>
+            </div>
+        </div>
+    
+
         <section class="conteudo">
             <h1 class="titulo_principal">Análise e Desenvolvimento de Sistemas</h1>
             <p>Nossa turma de ADS é formada por um grupo de estudantes dedicados e apaixonados pela tecnologia e inovação. Juntos, estamos explorando os vastos campos da Análise e Desenvolvimento de Sistemas, sempre em busca de novos conhecimentos e soluções criativas.</p>
