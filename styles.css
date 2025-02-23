@@ -102,7 +102,7 @@
         margin-right: 25px;
         height: 27px;
         border-right: solid 1px #fff;
-        opacity: 0.3;
+        opacity: 0.8;
     }
 
     .excluir-x i {
@@ -254,12 +254,6 @@
         text-align: center;
         color: #ff7b00;
     }
-    
-    .sec_videos {
-        width: 100%;
-        padding: 0px 80px 0px 80px;
-    }
-
     
     footer {
         background-color: #070d22;
