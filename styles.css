@@ -250,6 +250,7 @@
     footer {
         background-color: #070d22;
         height: 190px;
+        margin-top: 400px;
     }
     .div_rs {
         display: flex;
