@@ -51,7 +51,7 @@
         display: none;
     }
 
-    .voltar_ant {
+    .voltar_set{
         display: none;
     }
 
@@ -560,7 +560,7 @@
     }
     
     .inputtt input {
-        width: 230px;
+        width: 235px;
         height: 31px;
         outline: none;
         border: none;
@@ -766,25 +766,26 @@
         border: none;
         font-size: 17px;
     }
-
-    .voltar_ant {
+    
+    .voltar_set {
         position: fixed;
-        background-color: #126383;
-        color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 55px;
+        z-index: 2000;
+        width: 25px;
         height: 25px;
-        z-index: 200;
-        margin-top: 60px;
-        border-radius: 5px;
-        left: 5%;
+        margin-top: 24px;
+        margin-left: 20px;
+        display: none;
     }
 
-    .voltar_ant:active {
-        opacity: 0.5;
-        color: #ffffff5b;
+    .voltar_set i {
+        display: flex;
+        font-size: 25px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .voltar_set i:active {
+        opacity: 0.6;
     }
 
     footer {

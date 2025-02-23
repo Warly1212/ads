@@ -24,15 +24,19 @@ function inp_variavel() {
     const inputs = document.getElementById('inputs');
     const inputField = inputs.querySelector('input');
     const menu_inp = document.getElementById('menu_inp');
+    const voltarr = document.getElementById('voltar_set');
+
     if (inputs.style.display === 'none' || inputs.style.display === '') {
         menu_inp.style.display = 'block';
         inputs.style.display = 'flex';
+        voltarr.style.display = 'flex'
         requestAnimationFrame(() => {
             inputField.focus();
         });
     } else {
         inputs.style.display = 'none';
         menu_inp.style.display = 'none';
+        voltarr.style.display = 'none'
     }
 }
 
