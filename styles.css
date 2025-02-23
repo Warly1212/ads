@@ -724,7 +724,7 @@
     .carousel {
         position: relative;
         overflow: hidden;
-        width: 90%;
+        width: 94%;
         max-width: 600px;
         margin: auto;
     }
@@ -757,25 +757,26 @@
     }
 
     .carousel-item img {
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        max-width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
         border: solid 1px #00a6ff;
         border-radius: 5px;
         height: auto;
         object-fit: contain;
     }
-    
-    button.prev, button.next {
+
+    button.prev,
+    button.next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.062);
+        background-color: rgba(255, 255, 255, 0.041);
         border-radius: 5px;
         color: rgba(255, 255, 255, 0.767);
-        font-size: 20px;
+        font-size: 28px;
         border: none;
-        padding: 8px 6px 8px 6px;
+        padding: 10px 6px 10px 6px;
         cursor: pointer;
         z-index: 1;
         transition: 0.5s;
@@ -801,7 +802,7 @@
 
     .carousel-indicators {
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -818,8 +819,9 @@
     }
 
     .carousel-indicators .dot.active {
-        background-color: #0026ff;
+        background-color: #008cff;
     }
+
 
 
 
