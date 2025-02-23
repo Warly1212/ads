@@ -348,10 +348,6 @@
         padding-bottom: 1px;
     }
 
-    main {
-        padding-top: 150px;
-    }
-
     main::-webkit-scrollbar {
         display: none;
     }
@@ -724,8 +720,9 @@
     .carousel {
         position: relative;
         overflow: hidden;
-        width: 94%;
+        width: 95%;
         max-width: 600px;
+        top: 155px;
         margin: auto;
     }
 
@@ -758,8 +755,8 @@
 
     .carousel-item img {
         max-width: 94%;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
         border: solid 1px #00a6ff;
         border-radius: 5px;
         height: auto;
@@ -822,24 +819,8 @@
         background-color: #008cff;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .conteudo {
-        margin-top: 135px;
+        margin-top: 185px;
         margin-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
@@ -962,7 +943,7 @@
     footer p {
         text-align: center;
         line-height: 2;
-        font-size: 12px;
+        font-size: 13px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -977,7 +958,7 @@
     }
 
     .copy {
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
 }
