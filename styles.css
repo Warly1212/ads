@@ -101,6 +101,8 @@
         display: flex;
         margin-right: 25px;
         height: 27px;
+        border-right: solid 1px #fff;
+        opacity: 0.3;
     }
 
     .excluir-x i {
