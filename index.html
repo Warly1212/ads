@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,15 +8,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="imagens/logo_pading.svg">
 
-    <svg class="bi bi-exclamation-triangle text-success" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"></svg>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <svg class="bi bi-exclamation-triangle text-success" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"></svg>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <main>
         <header class="cabecalho">
@@ -30,7 +37,8 @@
                         <li class="list_itens"><a href="SubPaginas/noticias.html">Notícias</a></li>
                         <li class="list_itens"><a href="/SubPaginas/sobre.html">Sobre</a></li>
                         <li class="list_itens"><a href="/SubPaginas/atletica.html">Atlética</a></li>
-                        <li class="list_itens"><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
+                        <li class="list_itens"><a target="_blank" rel="sternal"
+                                href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
                 </div>
                 <div class="input_d">
@@ -47,7 +55,7 @@
                 </div>
             </div>
 
-            
+
         </header>
 
         <button onclick="click_menu()" class="mobile-menu"><img src="imagens/icon_menu.png" alt="menu"></button>
@@ -57,9 +65,9 @@
                 <img src="imagens/insta_lg.png" alt="">
             </a>
         </div>
-       
 
-        
+
+
         <div class="list_cell">
             <nav>
                 <ul class="nav_list" id="nav_list">
@@ -71,12 +79,13 @@
                     <li><a onclick="click_menu()" href="SubPaginas/noticias.html">Notícias</a></li>
                     <li><a onclick="click_menu()" href="SubPaginas/sobre.html">Sobre</a></li>
                     <li><a onclick="click_menu()" href="SubPaginas/atletica.html">Atlética</a></li>
-                    <li><a onclick="click_menu()" target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
+                    <li><a onclick="click_menu()" target="_blank" rel="sternal"
+                            href="https://serradocarmo.edu.br">Fasec</a></li>
                 </ul>
             </nav>
         </div>
 
-       
+
 
         <div class="menu-background" id="menuBackground" onclick="click_menu()"></div>
 
@@ -84,13 +93,47 @@
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <div class="carousel-slide">
                 <div class="carousel-item">
-                    <img src="imagens/Ads - Fasec 1.png" alt="Imagem 1">
+                    <a href="#"><img src="imagens/Ads - Fasec 3.png" alt="Imagem 3">
+                        <div class="text-overlay">
+                            <h2>Atlética</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit obcaecati iste,
+                                quae eum accusantium dicta cumque!</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/Ads - Fasec 2.png" alt="Imagem 2">
+                    <a href="#"><img src="imagens/Ads - Fasec 1.png" alt="Imagem 1">
+                        <div class="text-overlay">
+                            <h2>Notícias</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae fuga inventore,
+                                officiis ipsam nostrum </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/Ads - Fasec 3.png" alt="Imagem 3">
+                    <a href="#"><img src="imagens/Ads - Fasec 2.png" alt="Imagem 2">
+                        <div class="text-overlay">
+                            <h2>Sobre</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil enim illum architecto
+                                quisquam eius dolorem consectetur</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="imagens/Ads - Fasec 3.png" alt="Imagem 3">
+                        <div class="text-overlay">
+                            <h2>Atlética</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quisquam ipsa dignissimos
+                                veniam, dolorum eligendi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="imagens/Ads - Fasec 1.png" alt="Imagem 1">
+                        <div class="text-overlay">
+                            <h2>Notícias</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -100,27 +143,35 @@
                 <span class="dot" onclick="moveSlideTo(2)"></span>
             </div>
         </div>
-    
 
-        <section class="conteudo">
+
+        <section data-aos="zoom-in" class="conteudo">
             <h1 class="titulo_principal">Análise e Desenvolvimento de Sistemas</h1>
-            <p>Nossa turma de ADS é formada por um grupo de estudantes dedicados e apaixonados pela tecnologia e inovação. Juntos, estamos explorando os vastos campos da Análise e Desenvolvimento de Sistemas, sempre em busca de novos conhecimentos e soluções criativas.</p>
+            <p>Nossa turma de ADS é formada por um grupo de estudantes dedicados e apaixonados pela tecnologia e
+                inovação. Juntos, estamos explorando os vastos campos da Análise e Desenvolvimento de Sistemas, sempre
+                em busca de novos conhecimentos e soluções criativas.</p>
         </section>
 
-        <section class="sobre">
-            <div class="div_sobre">
+        <section data-aos="zoom-in" class="sobre">
+            <div data-aos="zoom-in" class="div_sobre">
                 <h2>Sobre Nós</h2>
-                <p>Nossa turma de ADS é formada por um grupo de estudantes dedicados e apaixonados pela tecnologia e inovação. Juntos, estamos explorando os vastos campos da Análise e Desenvolvimento de Sistemas, sempre em busca de novos conhecimentos e soluções criativas.</p>
+                <p>Nossa turma de ADS é formada por um grupo de estudantes dedicados e apaixonados pela tecnologia e
+                    inovação. Juntos, estamos explorando os vastos campos da Análise e Desenvolvimento de Sistemas,
+                    sempre em busca de novos conhecimentos e soluções criativas.</p>
             </div>
 
-            <div class="div_sobre">
+            <div data-aos="zoom-in" class="div_sobre">
                 <h2>Notícias</h2>
-                <p>Aqui você encontra as últimas notícias sobre nossa turma. Fique atualizado com os eventos, conquistas, e tudo mais que está acontecendo no mundo do ADS. Desde competições e premiações até novidades do mercado, este é o lugar para se informar.</p>
+                <p>Aqui você encontra as últimas notícias sobre nossa turma. Fique atualizado com os eventos,
+                    conquistas, e tudo mais que está acontecendo no mundo do ADS. Desde competições e premiações até
+                    novidades do mercado, este é o lugar para se informar.</p>
             </div>
 
-            <div class="div_sobre">
+            <div data-aos="zoom-in" class="div_sobre">
                 <h2>Eventos</h2>
-                <p>Nossos eventos são oportunidades incríveis para aprender, compartilhar conhecimento e fazer networking. Fique ligado nas próximas palestras, workshops, e hackathons que estão por vir. Participe e amplie seu horizonte profissional!</p>
+                <p>Nossos eventos são oportunidades incríveis para aprender, compartilhar conhecimento e fazer
+                    networking. Fique ligado nas próximas palestras, workshops, e hackathons que estão por vir.
+                    Participe e amplie seu horizonte profissional!</p>
             </div>
         </section>
 
@@ -128,11 +179,13 @@
             <div class="footer_top"></div>
             <div class="div_rs">
                 <div class="sociais">
-                    <a target="_blank" rel="sternal" href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1"><i class="bi bi-instagram"></i></a>
+                    <a target="_blank" rel="sternal" href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1"><i
+                            class="bi bi-instagram"></i></a>
                 </div>
-    
+
                 <div class="sociais">
-                    <a target="_blank" rel="sternal" href="https://www.tiktok.com/@dev.fasec?_t=ZM-8u22hPylk5l&_r=1"><i class="bi bi-tiktok"></i></a>
+                    <a target="_blank" rel="sternal" href="https://www.tiktok.com/@dev.fasec?_t=ZM-8u22hPylk5l&_r=1"><i
+                            class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 
@@ -144,6 +197,11 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
+
 </html>

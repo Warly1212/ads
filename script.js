@@ -40,22 +40,22 @@ function inp_variavel() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const inputField = document.getElementById("input_aletrnativo1");
     const clearButton = document.getElementById("limp_text");
-    
-    clearButton.addEventListener("click", function() {
+
+    clearButton.addEventListener("click", function () {
         inputField.value = "";
         inputField.focus();
     });
 
     if (inputField.value.trim() !== "") {
         clearButton.style.display = "flex";
-      } else {
+    } else {
         clearButton.style.display = "none";
         clearButton.focus();
     }
-    
+
 });
 
 function limp_text() {
@@ -68,29 +68,45 @@ function acionar_input() {
     var botao = document.getElementById("limp_text");
 
     if (input.value.trim() !== "") {
-      botao.style.display = "flex";
+        botao.style.display = "flex";
     } else {
-      botao.style.display = "none";
-      botao.focus();
+        botao.style.display = "none";
+        botao.focus();
     }
 }
 
-let currentIndex = 0;
+let currentIndex = 1;
 let startX;
 let isDragging = false;
 
+const slides = document.querySelector('.carousel-slide');
+const totalSlides = slides.children.length;
+const intervalTime = 7000;
+
 function moveSlide(n) {
-    const slides = document.querySelector('.carousel-slide');
-    const totalSlides = slides.children.length;
-    currentIndex = (currentIndex + n + totalSlides) % totalSlides;
-    slides.style.transition = 'transform 0.5s ease-in-out'; /* Adicionando animação de transição */
+    currentIndex += n;
+    slides.style.transition = 'transform 0.5s ease-in-out';
     slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+
+    if (currentIndex >= totalSlides - 1) {
+        setTimeout(() => {
+            slides.style.transition = 'none';
+            currentIndex = 1;
+            slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+        }, 500);
+    } else if (currentIndex <= 0) {
+        setTimeout(() => {
+            slides.style.transition = 'none';
+            currentIndex = totalSlides - 2;
+            slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+        }, 500);
+    }
+
     updateDots();
 }
 
 function moveSlideTo(index) {
-    const slides = document.querySelector('.carousel-slide');
-    currentIndex = index;
+    currentIndex = index + 1;
     slides.style.transition = 'transform 0.5s ease-in-out';
     slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
     updateDots();
@@ -99,12 +115,16 @@ function moveSlideTo(index) {
 function updateDots() {
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
-        if (index === currentIndex) {
+        if (index === ((currentIndex - 1 + totalSlides - 2) % (totalSlides - 2)) % 3) {
             dot.classList.add('active');
         } else {
             dot.classList.remove('active');
         }
     });
+}
+
+function autoSlide() {
+    moveSlide(1);
 }
 
 document.querySelector('.carousel-slide').addEventListener('touchstart', (e) => {
@@ -129,12 +149,18 @@ document.querySelector('.carousel-slide').addEventListener('touchend', () => {
     isDragging = false;
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    setInterval(autoSlide, intervalTime);
+});
 
 
 
 
 
-window.onload = function() {
+
+
+window.onload = function () {
     document.getElementById('nav_list').style.display = 'none';
     document.getElementById('menuBackground').style.display = 'none';
     document.getElementById('menu_inp').style.display = 'none';
