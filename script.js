@@ -71,6 +71,7 @@ function acionar_input() {
     }
 }
 
+
 window.onload = function() {
     document.getElementById('nav_list').style.display = 'none';
     document.getElementById('menuBackground').style.display = 'none';
