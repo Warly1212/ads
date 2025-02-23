@@ -327,7 +327,7 @@
 /*Formatação Dispositivos moveis*/
 
 @media (max-width: 800px) {
-  
+
 
     * {
         color: #ffffff;
@@ -858,9 +858,12 @@
     }
 
     .text-overlay h2 {
-        margin-top: 5%;
+        margin-top: 10%;
         font-size: 30px;
-        
+        text-shadow: 0px 0px 8px #0678b6,
+            0px 0px 12px #0678b6,
+            0px 0px 8px #0678b6;
+
     }
 
     .text-overlay p {
