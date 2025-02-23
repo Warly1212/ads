@@ -105,12 +105,11 @@
 
     .excluir-x::before {
         content: "";
-        top: 50%;
         right: 0;
         transform: translateY(-50%);
         width: 50%;
         height: 70%;
-        border-right: 1px solid rgba(255, 255, 255, 0.26)
+        border-left: 1px solid rgba(255, 255, 255, 0.26)
     }
 
     .excluir-x i {
