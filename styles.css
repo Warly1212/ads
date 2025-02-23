@@ -62,6 +62,10 @@
     .list_cell {
         display: none;
     }
+
+    .excluir-x {
+        display: none;
+    }
     
     .cabecalho {
         background-color: rgb(0, 0, 0);
@@ -542,11 +546,11 @@
     }
     
     .inputtt input {
-        width: 220px;
+        width: 230px;
         height: 31px;
         outline: none;
         border: none;
-        border-radius: 15px;
+        border-radius: 10px;
         background-color: rgba(139, 139, 139, 0.233);
     }
     
@@ -569,22 +573,52 @@
     .inputtt input::placeholder {
         color: #ffffff;
     }
+
+    .excluir-x {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        margin-right: 30px;
+        height: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        display: none;
+    }
+
+    .excluir-x::after {
+        content: '';
+        height: 70%;
+        border-left: solid 1px #ffffff38;
+    }
+
+    .excluir-x i {
+        display: flex;
+        font-size: 25px;
+        align-self: center;
+        opacity: 0.8;
+        cursor: pointer;
+    }
     
     .inputtt button {
         position: absolute;
         background-color: transparent;
         height: 31px;
-        width: 35px;
+        width: 30px;
         color: white;
         border: none;
         cursor: pointer;
     }
     
     .inputtt button:active {
-        background-color: #126383;
+        background-color: #ffffff62;
         color: #ffffff;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 0px 10px 10px 0px;
         
+    }
+
+    .inputtt button i:active {
+        color: #001c2b;
     }
 
     .ads {
@@ -613,7 +647,7 @@
         display: grid;
         justify-content: center;
         width: 240px;
-        height: 30px;
+        height: 40px;
         outline: none;
         border: none;
         border-radius: 10px;
@@ -622,7 +656,7 @@
     
     .input_d input[type="text"] {
         color: #ffffff;
-        padding-left: 10px;
+        padding-left: 15px;
     }
     
     .input_d input[type="text"]:focus {
@@ -644,18 +678,21 @@
     .input_d button {
         position: absolute;
         background-color: transparent;
-        height: 31px;
-        width: 35px;
+        height: 40px;
+        width: 30px;
         color: white;
         border: none;
         cursor: pointer;
     }
     
     .input_d button:active {
-        background-color: #12638393;
-        color: #ffffff;
+        background-color: #ffffff63;
         border-radius: 0px 10px 10px 0px;
         
+    }
+
+    .input_d button i:active {
+        color: #001c2b;
     }
 
     .conteudo {

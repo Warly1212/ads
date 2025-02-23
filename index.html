@@ -34,7 +34,13 @@
                     </ul>
                 </div>
                 <div class="input_d">
-                    <input type="text" placeholder="Buscar...">
+                    <input oninput="acionar_input()" id="input_aletrnativo1" type="text" placeholder="Buscar...">
+
+                    <div onclick="limp_text()" class="excluir-x" id="limp_text">
+                        <i class="bi bi-x">
+                        </i>
+                    </div>
+
                     <button type="submit">
                         <i class="fas fa-search"></i>
                     </button>
