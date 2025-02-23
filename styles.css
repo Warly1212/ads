@@ -101,15 +101,8 @@
         display: flex;
         margin-right: 25px;
         height: 27px;
-    }
-
-    .excluir-x::before {
-        content: "";
-        right: 0;
-        transform: translateY(-50%);
-        width: 50%;
-        height: 70%;
-        border-left: 1px solid rgba(255, 255, 255, 0.26)
+        border-right: solid 1px;
+        opacity: 0.2;
     }
 
     .excluir-x i {
