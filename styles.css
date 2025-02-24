@@ -755,12 +755,16 @@
         margin-right: 0;
     }
 
-    .carousel-item img {
+    .carousel-item a {
+        background-color: transparent;
+    }
+
+    .carousel-item a img {
         max-width: 94%;
         margin-left: 2.5%;
         margin-right: 2.5%;
-        border: solid 1px #00a6ff;
-        border-radius: 5px;
+        border: solid 1px #008cff;
+        border-radius: 10px;
         height: auto;
         object-fit: contain;
     }
