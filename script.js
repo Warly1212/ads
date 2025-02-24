@@ -78,6 +78,7 @@ function acionar_input() {
 let currentIndex = 1;
 let startX;
 let isDragging = false;
+let autoSlideInterval;
 
 const slides = document.querySelector('.carousel-slide');
 const totalSlides = slides.children.length;
@@ -127,9 +128,15 @@ function autoSlide() {
     moveSlide(1);
 }
 
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, intervalTime);
+}
+
 document.querySelector('.carousel-slide').addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     isDragging = true;
+    resetAutoSlide();
 });
 
 document.querySelector('.carousel-slide').addEventListener('touchmove', (e) => {
@@ -139,25 +146,23 @@ document.querySelector('.carousel-slide').addEventListener('touchmove', (e) => {
     if (diff > 50) {
         moveSlide(1);
         isDragging = false;
+        resetAutoSlide();
     } else if (diff < -50) {
         moveSlide(-1);
         isDragging = false;
+        resetAutoSlide();
     }
 });
 
 document.querySelector('.carousel-slide').addEventListener('touchend', () => {
     isDragging = false;
+    resetAutoSlide();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-    setInterval(autoSlide, intervalTime);
+    autoSlideInterval = setInterval(autoSlide, intervalTime);
 });
-
-
-
-
-
 
 
 window.onload = function () {
