@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const p6 = document.getElementById("p6");
 
     const periodo1 = document.getElementById("periodo1");
-    const periodo2= document.getElementById("periodo2");
+    const periodo2 = document.getElementById("periodo2");
     const periodo3 = document.getElementById("periodo3");
     const periodo4 = document.getElementById("periodo4");
     const periodo5 = document.getElementById("periodo5");
@@ -199,14 +199,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     p2.addEventListener("click", function() {
-        p2.classList.add("active");
         p1.classList.remove("active");
+        p2.classList.add("active");
         p3.classList.remove("active");
         p4.classList.remove("active");
         p5.classList.remove("active");
         p6.classList.remove("active");
         periodo1.style.zIndex = 1;
-        periodo2.zIndex = 100;
+        periodo2.style.zIndex = 100;
         periodo3.style.zIndex = 1;
         periodo4.style.zIndex = 1;
         periodo5.style.zIndex = 1;
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p5.classList.remove("active");
         p6.classList.remove("active");
         periodo1.style.zIndex = 1;
-        periodo2.zIndex = 1;
+        periodo2.style.zIndex = 1;
         periodo3.style.zIndex = 100;
         periodo4.style.zIndex = 1;
         periodo5.style.zIndex = 1;
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p5.classList.remove("active");
         p6.classList.remove("active");
         periodo1.style.zIndex = 1;
-        periodo2.zIndex = 1;
+        periodo2.style.zIndex = 1;
         periodo3.style.zIndex = 1;
         periodo4.style.zIndex = 100;
         periodo5.style.zIndex = 1;
@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p4.classList.remove("active");
         p6.classList.remove("active");
         periodo1.style.zIndex = 1;
-        periodo2.zIndex = 1;
+        periodo2.style.zIndex = 1;
         periodo3.style.zIndex = 1;
         periodo4.style.zIndex = 1;
         periodo5.style.zIndex = 100;
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p5.classList.remove("active");
         p4.classList.remove("active");
         periodo1.style.zIndex = 1;
-        periodo2.zIndex = 1;
+        periodo2.style.zIndex = 1;
         periodo3.style.zIndex = 1;
         periodo4.style.zIndex = 1;
         periodo5.style.zIndex = 1;
@@ -275,12 +275,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function toggleColor(activeId) {
-    // Remove the blue class from all divs
+   
     for (let i = 1; i <= 6; i++) {
         document.getElementById('p' + i).classList.add('cor2');
         document.getElementById('p' + i).classList.remove('cor1');
     }
-    // Add the blue class to the active div
+  
     document.getElementById(activeId).classList.add('cor1');
     document.getElementById(activeId).classList.remove('cor2');
 }
@@ -303,5 +303,4 @@ window.onload = function () {
     document.getElementById('nav_list').style.display = 'none';
     document.getElementById('menuBackground').style.display = 'none';
     document.getElementById('menu_inp').style.display = 'none';
-    document.getElementById('set1').classList.add('active');
 }

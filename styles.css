@@ -890,6 +890,10 @@
         display: grid;
     }
 
+    #periodo1 {
+        z-index: 2;
+    }
+
     .periodos div {
         text-align: center;
         align-self: center;
