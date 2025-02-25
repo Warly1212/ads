@@ -188,6 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
         p4.classList.remove("active");
         p5.classList.remove("active");
         p6.classList.remove("active");
+        
 
         periodo1.style.zIndex = 100;
         periodo2.style.zIndex = 1;
@@ -200,16 +201,107 @@ document.addEventListener("DOMContentLoaded", function() {
     p2.addEventListener("click", function() {
         p2.classList.add("active");
         p1.classList.remove("active");
+        p3.classList.remove("active");
+        p4.classList.remove("active");
+        p5.classList.remove("active");
+        p6.classList.remove("active");
         periodo1.style.zIndex = 1;
         periodo2.zIndex = 100;
+        periodo3.style.zIndex = 1;
+        periodo4.style.zIndex = 1;
+        periodo5.style.zIndex = 1;
+        periodo6.style.zIndex = 1;
+    });
+
+    p3.addEventListener("click", function() {
+        p3.classList.add("active");
+        p1.classList.remove("active");
+        p2.classList.remove("active");
+        p4.classList.remove("active");
+        p5.classList.remove("active");
+        p6.classList.remove("active");
+        periodo1.style.zIndex = 1;
+        periodo2.zIndex = 1;
+        periodo3.style.zIndex = 100;
+        periodo4.style.zIndex = 1;
+        periodo5.style.zIndex = 1;
+        periodo6.style.zIndex = 1;
+    });
+
+    p4.addEventListener("click", function() {
+        p4.classList.add("active");
+        p1.classList.remove("active");
+        p2.classList.remove("active");
+        p3.classList.remove("active");
+        p5.classList.remove("active");
+        p6.classList.remove("active");
+        periodo1.style.zIndex = 1;
+        periodo2.zIndex = 1;
+        periodo3.style.zIndex = 1;
+        periodo4.style.zIndex = 100;
+        periodo5.style.zIndex = 1;
+        periodo6.style.zIndex = 1;
+    });
+
+    p5.addEventListener("click", function() {
+        p5.classList.add("active");
+        p1.classList.remove("active");
+        p2.classList.remove("active");
+        p3.classList.remove("active");
+        p4.classList.remove("active");
+        p6.classList.remove("active");
+        periodo1.style.zIndex = 1;
+        periodo2.zIndex = 1;
+        periodo3.style.zIndex = 1;
+        periodo4.style.zIndex = 1;
+        periodo5.style.zIndex = 100;
+        periodo6.style.zIndex = 1;
+    });
+
+    p6.addEventListener("click", function() {
+        p6.classList.add("active");
+        p1.classList.remove("active");
+        p2.classList.remove("active");
+        p3.classList.remove("active");
+        p5.classList.remove("active");
+        p4.classList.remove("active");
+        periodo1.style.zIndex = 1;
+        periodo2.zIndex = 1;
+        periodo3.style.zIndex = 1;
+        periodo4.style.zIndex = 1;
+        periodo5.style.zIndex = 1;
+        periodo6.style.zIndex = 100;
     });
 });
 
+function toggleColor(activeId) {
+    // Remove the blue class from all divs
+    for (let i = 1; i <= 6; i++) {
+        document.getElementById('p' + i).classList.add('cor2');
+        document.getElementById('p' + i).classList.remove('cor1');
+    }
+    // Add the blue class to the active div
+    document.getElementById(activeId).classList.add('cor1');
+    document.getElementById(activeId).classList.remove('cor2');
+}
 
+document.querySelector('.periodos').addEventListener('click', (event) => {
+    if (event.target.closest('.div-style')) {
+        const divs = document.querySelectorAll('.bol_per');
+        divs.forEach(div => div.classList.remove('active'));
 
+        const periodos = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6'];
+        const index = periodos.findIndex(id => id === event.target.closest('.div-style').id);
+
+        if (index !== -1) {
+            document.getElementById(`set${index + 1}`).classList.add('active');
+        }
+    }
+});
 
 window.onload = function () {
     document.getElementById('nav_list').style.display = 'none';
     document.getElementById('menuBackground').style.display = 'none';
     document.getElementById('menu_inp').style.display = 'none';
+    document.getElementById('set1').classList.add('active');
 }
