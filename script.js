@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
 function limp_text() {
     document.getElementById('limp_text').style.display = 'none';
 }
@@ -163,6 +165,47 @@ document.addEventListener('DOMContentLoaded', () => {
     slides.style.transform = `translateX(-${currentIndex * 33.33}%)`;
     autoSlideInterval = setInterval(autoSlide, intervalTime);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const p1 = document.getElementById("p1");
+    const p2 = document.getElementById("p2");
+    const p3 = document.getElementById("p3");
+    const p4 = document.getElementById("p4");
+    const p5 = document.getElementById("p5");
+    const p6 = document.getElementById("p6");
+
+    const periodo1 = document.getElementById("periodo1");
+    const periodo2= document.getElementById("periodo2");
+    const periodo3 = document.getElementById("periodo3");
+    const periodo4 = document.getElementById("periodo4");
+    const periodo5 = document.getElementById("periodo5");
+    const periodo6 = document.getElementById("periodo6");
+
+    p1.addEventListener("click", function() {
+        p1.classList.add("active");
+        p2.classList.remove("active");
+        p3.classList.remove("active");
+        p4.classList.remove("active");
+        p5.classList.remove("active");
+        p6.classList.remove("active");
+
+        periodo1.style.zIndex = 100;
+        periodo2.style.zIndex = 1;
+        periodo3.style.zIndex = 1;
+        periodo4.style.zIndex = 1;
+        periodo5.style.zIndex = 1;
+        periodo6.style.zIndex = 1;
+    });
+
+    p2.addEventListener("click", function() {
+        p2.classList.add("active");
+        p1.classList.remove("active");
+        periodo1.style.zIndex = 1;
+        periodo2.zIndex = 100;
+    });
+});
+
+
 
 
 window.onload = function () {

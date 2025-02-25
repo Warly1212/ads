@@ -843,7 +843,86 @@
         position: relative;
     }
 
+    .Grade_curricular {
+        margin-top: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    .periodos {
+        width: 30%;
+        height: 200px;
+        display: grid;
+        border: solid 2px #000000;
+    }
+
+    .periodos div {
+        text-align: center;
+        align-self: center;
+        height: 33.33px;
+    }
+
+    .info_geral div {
+        background-color: #ff7b00;
+    }
+
+    .periodos div p {
+        color: #000000;
+    }
+
+    .info_geral div ul li:not(:last-child) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1px;
+    }
+
+    .info_geral div ul li {
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .grade-prin {
+        background-color: #ffffff;
+        height: 200px;
+        border: solid 1px #fff;
+        display: flex;
+    }
+
+    .grade-prin .info_geral {
+        right: 0;
+        width: 70%;
+    }
+
+    .info_geral div {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 54%;
+        height: 200px;
+        padding-left: 30px;
+    }
+
+    .info-grade1 {
+        z-index: 1;
+    }
+    .info-grade2 {
+        z-index: 1;
+    }
+    .info-grade3 {
+        z-index: 1;
+    }
+    .info-grade4 {
+        z-index: 1;
+    }
+    .info-grade5 {
+        z-index: 1;
+    }
+    .info-grade6 {
+        z-index: 1;
+    }
+    
+    
     .conteudo {
         margin-top: 185px;
         margin-bottom: 20px;
