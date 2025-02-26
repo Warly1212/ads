@@ -1015,7 +1015,7 @@
 
     .info_geral {
         background-color: #365869;
-        border-radius: 5px;
+        border-radius: 0px 5px 5px 0px;
     }
 
     .info_geral div {
