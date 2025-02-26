@@ -843,7 +843,7 @@
     }
 
     .Grade_curricular {
-        margin-top: 250px;
+        margin-top: 200px;
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -975,11 +975,11 @@
     }
 
     .info_geral div ul li:not(:last-child) {
-        margin-bottom: 1px;
+        margin-bottom: 5px;
     }
 
     .grade-prin {
-        background-color: #ffffff;
+        background-color: #80a0b7;
         height: 250px;
         border: solid 2px #ffffff;
         margin-bottom: 20px;
@@ -1015,6 +1015,7 @@
 
     .info_geral {
         background-color: #365869;
+        border-radius: 5px;
     }
 
     .info_geral div {
@@ -1035,7 +1036,7 @@
     }
 
     .cor2{
-        background-color: white;
+        background-color: #80a0b7;
         color: #5a6462;
         transition: background-color 0.5s ease, color 0.5s ease;
     }
