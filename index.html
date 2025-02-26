@@ -42,16 +42,16 @@
                     </ul>
                 </div>
                 <div class="input_d">
-                    <input oninput="acionar_input()" id="input_aletrnativo1" type="text" placeholder="Buscar...">
-
-                    <div onclick="limp_text()" class="excluir-x" id="limp_text">
-                        <i class="bi bi-x">
-                        </i>
-                    </div>
-
-                    <button type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <form action="" class="form_input">
+                        <input oninput="acionar_input()" id="input_alternativo1" type="text" placeholder="Buscar..." name="meuInput">
+                        <div onclick="limp_text()" class="excluir-x" id="limp_text">
+                            <i class="bi bi-x">
+                            </i>
+                        </div>
+                        <button type="submit" onclick="buscar(event)">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
 

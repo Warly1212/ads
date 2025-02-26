@@ -41,7 +41,7 @@ function inp_variavel() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const inputField = document.getElementById("input_aletrnativo1");
+    const inputField = document.getElementById("input_alternativo1");
     const clearButton = document.getElementById("limp_text");
 
     clearButton.addEventListener("click", function () {
@@ -66,7 +66,7 @@ function limp_text() {
 
 
 function acionar_input() {
-    var input = document.getElementById("input_aletrnativo1");
+    var input = document.getElementById("input_alternativo1");
     var botao = document.getElementById("limp_text");
 
     if (input.value.trim() !== "") {
