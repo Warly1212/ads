@@ -817,7 +817,6 @@
         height: 5px;
         border-radius: 50%;
         border: 1px solid white;
-        background-color: rgb(255, 255, 255);
         cursor: pointer;
     }
 
@@ -849,17 +848,61 @@
         padding-right: 20px;
         display: flex;
         justify-content: center;
-        align-items: top;
-        height: 300px;
+        flex-direction: column;
         align-items: center;
         background-color: #00000044;
+    }
+
+    .infor_curso {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px #fff;
+        border-radius: 5px;
+    }
+
+    .dv_info {
+        position: absolute;
+        margin-top: -22px;
+        background-color: #001c2b;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 30px;
+        border: solid 1px #fff;
+        border-radius: 5px;
+    }
+
+    .in2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .infor_curso div h3 {
+        text-align: center;
+        color: #ff7300;
+    }
+
+    .infor_curso div div{
+        display: flex;
+        align-items: center;
+    }
+
+    .infor_curso div div i {
+        font-size: 25px;
+    }
+
+    .infor_curso div div p {
+        font-size: 18px;
+        margin-left: 20px;
     }
 
     .bols {
         top: 1px;
         position: absolute;
         z-index: 200;
-        height: 200px;
+        height: 250px;
         left: -20px;
         display: flex;
         flex-direction: column;
@@ -886,8 +929,12 @@
 
     .periodos {
         width: 30%;
-        height: 200px;
+        height: 250px;
         display: grid;
+    }
+
+    .periodos div {
+        border-radius: 5px 0px 0px 5px;
     }
 
     #periodo1 {
@@ -897,7 +944,7 @@
     .periodos div {
         text-align: center;
         align-self: center;
-        height: 33.33px;
+        height: 41.66px;
     }
 
     .info_geral {
@@ -917,15 +964,25 @@
         margin-bottom: 1px;
     }
 
+    .info_geraldiv div ul {
+        list-style-type: square;
+    }
+
     .info_geral div ul li {
         font-size: 12px;
         color: #ffffff;
+        
+    }
+
+    .info_geral div ul li:not(:last-child) {
+        margin-bottom: 1px;
     }
 
     .grade-prin {
         background-color: #ffffff;
-        height: 200px;
-        border: solid 2px #fff;
+        height: 250px;
+        border: solid 2px #ffffff;
+        margin-bottom: 20px;
         display: flex;
         width: 100%;
         border-radius: 5px;
@@ -944,7 +1001,7 @@
         border-radius: 5px;
         justify-content: center;
         align-items: center;
-        margin-top: -214px;
+        margin-top: -20px;
     }
 
     .matriz_curricular p {
@@ -965,7 +1022,7 @@
         display: flex;
         align-items: center;
         width: 55%;
-        height: 195px;
+        height: 245px;
         padding-left: 20px;
         background-color: #365869;
         margin-top: 2px;
