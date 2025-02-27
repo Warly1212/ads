@@ -41,8 +41,8 @@
                                 href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
                 </div>
-                <div class="input_d">
-                    <form action="" class="form_input">
+                <div class="input_d" id="inputd">
+                    <form action="" class="form_input" onclick="inp_variavel()">
                         <input oninput="acionar_input()" id="input_alternativo1" type="text" placeholder="Buscar..." name="meuInput">
                         <div onclick="limp_text()" class="excluir-x" id="limp_text">
                             <i class="bi bi-x">
@@ -60,10 +60,8 @@
 
         <button onclick="click_menu()" class="mobile-menu"><img src="imagens/icon_menu.png" alt="menu"></button>
 
-        <div class="insta_lg">
-            <a target="_blank" rel="sternal" href="https://www.instagram.com/adsfasec?igsh=N3ByODZ1YzZ4c3V1">
-                <img src="imagens/insta_lg.png" alt="">
-            </a>
+        <div class="search_lg" onclick="inp_variavel2()">
+            <i class="fas fa-search"></i>
         </div>
 
 
@@ -291,6 +289,42 @@
             <p class="footer_turma">Turma de Análise e Desenvolvimento de Sistemas - FASEC.</p>
             <p class="copy">&copy; 2025 Todos os direitos reservados.</p>
         </footer>
+
+        <div class="pesquisaa" id="pesquisaa">
+
+            <button class="voltar_set2" id="voltar_set" onclick="voltar2()">
+                <i class="bi bi-arrow-left"></i>
+            </button>
+            
+            <div class="sec_pesquisaa" id="sec_pesquisa">
+                <div class="input_pesquisa">
+                    <form class="form_input2" id="form2">
+
+                        <input oninput="acionar_input2()" id="input_alternativo2" type="text" placeholder="Buscar...">
+                        <div onclick="limp_text2()" class="excluir-x2" id="limp_text2">
+                            <i class="bi bi-x">
+                            </i>
+                        </div>
+
+                        <button type="submit" onclick="buscar()" id="buscar2" class="hidden">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+            <section id="results" class="results">
+                <div>
+                    <h3>Ainda estamos trabalhando aqui!</h3>
+                    <div class="the_process_prin">
+                        <div class="the_process1"></div>
+                        <div class="the_process2"></div>
+                        <div class="the_process3"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </main>
 

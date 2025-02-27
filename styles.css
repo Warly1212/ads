@@ -354,10 +354,205 @@
         display: none;
     }
 
-    .form_input {
+    #results {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #results div h3 {
+        text-align: center;
+        color: #ff9100;
+    }
+
+    .varrr {
+        height: 500px;
+        width: 100%;
+        display: flex;
+    }
+
+    .the_process_prin {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .the_process1, .the_process2, .the_process3 {
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        animation: mudarOpacidade 2 infinite;
+        border: 1px solid #fff;
+    }
+
+    .the_process1 {
+        background-color: #00b7ff;
+        animation: mudarOpacidade1 2s infinite;
+    }
+
+    .the_process2 {
+        background-color: #00b7ff;
+        animation: mudarOpacidade2 2s infinite;
+    }
+
+    .the_process3 {
+        background-color: #00b7ff;
+        animation: mudarOpacidade3 2s infinite;
+    }
+
+    @keyframes mudarOpacidade1 {
+        0% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        70% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes mudarOpacidade2 {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes mudarOpacidade3 {
+        0% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 1;
+        }
+    }
+    
+
+    
+    .the_process_prin div:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .pesquisaa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001c2b;
+    z-index: 4000;
+    overflow-y: auto;
+    display: none;
+    
+    }
+
+    .input_pesquisa {
+        display: flex;
+        width: 100%;
+        height: 25px;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-bottom: solid 1px #ffffff65;
+    }
+
+    .form_input2 input {
+        background-color: #3b3b3b00;
+        width: 250px;
+        height: 35px;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        outline: none;
+    }
+
+    .input_alternativo2:focus {
+        border: none;
+    }
+
+    .form_input2 input[type="text"]:focus {
+        border: none;
+    }
+
+    .form_input2 input:focus {
+        border: none;
+    }
+
+    .form_input2 input[type="text"] {
+        color: #ffffff;
+        padding-left: 30px;
+
+    }
+
+    .form_input2 {
         display: flex;
         justify-content: end;
         align-items: center;
+    }
+
+    .form_input2 button {
+        position: absolute;
+        background-color: transparent;
+        height: 35px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.397);
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .excluir-x2 {
+        position: absolute;
+        height: 20px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        border-right: solid 1px #ffffff25;
+        cursor: pointer;
+    }
+
+    .excluir-x2 i {
+        display: flex;
+        font-size: 25px;
+        align-self: center;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .voltar_set2 {
+        position: fixed;
+        z-index: 4001;
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        left: 5%;
+        display: flex;
+        top: 18px;
     }
 
     .elements_list {
@@ -463,25 +658,24 @@
         width: 27px;
     }
 
-    .insta_lg {
+    .search_lg {
         position: fixed;
         display: flex;
         align-items: center;
         justify-content: end;
-        background-color: transparent;
+        text-align: end;
         right: 20px;
-        top: 30px;
+        top: 25px;
         width: 27px;
         height: 27px;
         z-index: 1010;
-        background: none;
         border: none;
         padding: 0;
         cursor: pointer;
     }
 
-    .insta_lg img {
-        width: 27px;
+    .search_lg i {
+        font-size: 20px;
     }
 
     .menu-background {
@@ -548,10 +742,11 @@
     .div_inp {
         position: fixed;
         width: 100%;
-        height: 50px;
+        height: 100%;
         padding-top: 10px;
         background-color: #000000;
         z-index: 3100;
+        display: flex;
         justify-content: center;
         display: none;
     }
@@ -567,7 +762,6 @@
     .inputtt {
         display: flex;
         justify-content: end;
-        align-items: center;
         margin-bottom: 10px;
         margin-top: 10px;
 
@@ -663,66 +857,8 @@
     }
 
     .input_d {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin-bottom: 10%;
-        margin-top: 8%;
-        width: 100%;
+        display: none;
     }
-
-    .input_d input {
-        display: grid;
-        justify-content: center;
-        width: 240px;
-        height: 40px;
-        outline: none;
-        border: none;
-        border-radius: 10px;
-        background-color: rgba(139, 139, 139, 0.233);
-    }
-
-    .input_d input[type="text"] {
-        color: #ffffff;
-        padding-left: 15px;
-    }
-
-    .input_d input[type="text"]:focus {
-        background-color: #ffffff83;
-        border: solid 1px #ffffff;
-
-    }
-
-    .input_d input[type="text"]:focus::placeholder {
-        color: #ffffff;
-        font-size: 15px;
-    }
-
-    .input_d input::placeholder {
-        color: #ffffff;
-        font-size: 15px;
-    }
-
-    .input_d button {
-        position: absolute;
-        background-color: transparent;
-        height: 40px;
-        width: 30px;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    .input_d button:active {
-        background-color: #ffffff63;
-        border-radius: 0px 10px 10px 0px;
-
-    }
-
-    .input_d button i:active {
-        color: #001c2b;
-    }
-
 
 
     .carousel {
@@ -730,7 +866,7 @@
         overflow: hidden;
         width: 95%;
         max-width: 600px;
-        top: 155px;
+        top: 80px;
         margin: auto;
     }
 
@@ -849,7 +985,7 @@
     }
 
     .Grade_curricular {
-        margin-top: 260px;
+        margin-top: 130px;
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -1115,28 +1251,6 @@
         border: none;
         font-size: 17px;
     }
-
-    .voltar_set {
-        position: fixed;
-        z-index: 3200;
-        width: 25px;
-        height: 25px;
-        margin-top: 24px;
-        margin-left: 20px;
-        display: none;
-    }
-
-    .voltar_set i {
-        display: flex;
-        font-size: 25px;
-        align-self: center;
-        text-align: center;
-    }
-
-    .voltar_set i:active {
-        opacity: 0.6;
-    }
-
     footer {
         background-color: #070d22;
         height: 180px;

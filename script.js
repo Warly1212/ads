@@ -1,3 +1,29 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const searchButton = document.getElementById("buscar2");
+    const inputField = document.getElementById("input_alternativo2");
+    const result = document.getElementById('results');
+    const pesquisaa = document.getElementById("pesquisaa");
+
+    function executeSearch() {
+        pesquisaa.style.display = 'flex';
+    }
+
+    searchButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        executeSearch();
+    });
+
+    inputField.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            executeSearch()
+        }
+    });
+});
+
+
+
+
 function click_menu() {
 
     const nav_list = document.getElementById('nav_list');
@@ -20,54 +46,77 @@ function click_menu() {
     }
 }
 
-function inp_variavel() {
-    const inputs = document.getElementById('inputs');
-    const inputField = inputs.querySelector('input');
-    const menu_inp = document.getElementById('menu_inp');
-    const voltarr = document.getElementById('voltar_set');
 
-    if (inputs.style.display === 'none' || inputs.style.display === '') {
-        menu_inp.style.display = 'block';
-        inputs.style.display = 'flex';
-        voltarr.style.display = 'flex'
-        requestAnimationFrame(() => {
-            inputField.focus();
-        });
-    } else {
-        inputs.style.display = 'none';
-        menu_inp.style.display = 'none';
-        voltarr.style.display = 'none'
-    }
+
+function inp_variavel2() {
+    const input_var = document.getElementById('input_alternativo2');
+    const pesquisaa = document.getElementById('pesquisaa')
+
+    pesquisaa.style.display = 'flex'
+    requestAnimationFrame(() => {
+        input_var.focus();
+    });
 }
 
+
+
+
+function voltar2() {
+    const pesquisaa = document.getElementById('pesquisaa');
+
+    pesquisaa.style.display = 'none';
+    
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const inputField = document.getElementById("input_alternativo1");
-    const clearButton = document.getElementById("limp_text");
+    const inputField = document.getElementById("input_alternativo2");
+    const clearButton = document.getElementById("limp_text2");
+    const searchButton = document.getElementById("buscar2"); 
+
 
     clearButton.addEventListener("click", function () {
         inputField.value = "";
         inputField.focus();
+        updateButtonVisibility();
     });
 
-    if (inputField.value.trim() !== "") {
-        clearButton.style.display = "flex";
-    } else {
-        clearButton.style.display = "none";
-        clearButton.focus();
+    
+    function updateButtonVisibility() {
+        if (inputField.value.trim() !== "") {
+            clearButton.style.display = "flex";
+            searchButton.style.display = "flex";
+        } else {
+            clearButton.style.display = "none";
+            searchButton.style.display = "none";
+        }
     }
 
+    updateButtonVisibility();
+
+    inputField.addEventListener("input", updateButtonVisibility);
 });
 
 
 
-function limp_text() {
-    document.getElementById('limp_text').style.display = 'none';
+
+function limp_text2() {
+    const inputField = document.getElementById("input_alternativo2");
+    inputField.value = "";
+    acionar_input2();
+}
+
+function buscar() {
+    const inputField = document.getElementById("input_alternativo2");
+    alert("Buscando: " + inputField.value); 
 }
 
 
-function acionar_input() {
-    var input = document.getElementById("input_alternativo1");
-    var botao = document.getElementById("limp_text");
+function acionar_input2() {
+    var input = document.getElementById("input_alternativo2");
+    var botao = document.getElementById("limp_text2");
+
 
     if (input.value.trim() !== "") {
         botao.style.display = "flex";
