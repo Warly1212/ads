@@ -347,6 +347,7 @@
         background-color: #001c2b;
         margin: 0;
         padding: 0;
+        height: 100%;
         padding-bottom: 1px;
     }
 
@@ -381,7 +382,9 @@
         justify-content: center;
     }
 
-    .the_process1, .the_process2, .the_process3 {
+    .the_process1,
+    .the_process2,
+    .the_process3 {
         width: 10px;
         height: 10px;
         background-color: #ffffff;
@@ -409,9 +412,11 @@
         0% {
             opacity: 1;
         }
+
         30% {
             opacity: 0;
         }
+
         70% {
             opacity: 1;
         }
@@ -421,9 +426,11 @@
         0% {
             opacity: 1;
         }
+
         50% {
             opacity: 0;
         }
+
         80% {
             opacity: 1;
         }
@@ -433,16 +440,18 @@
         0% {
             opacity: 1;
         }
+
         70% {
             opacity: 0;
         }
+
         90% {
             opacity: 1;
         }
     }
-    
 
-    
+
+
     .the_process_prin div:not(:last-child) {
         margin-right: 5px;
     }
@@ -453,16 +462,16 @@
     }
 
     .pesquisaa {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #001c2b;
-    z-index: 4000;
-    overflow-y: auto;
-    display: none;
-    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #001c2b;
+        z-index: 4000;
+        overflow-y: auto;
+        display: none;
+
     }
 
     .input_pesquisa {
@@ -525,13 +534,13 @@
         height: 35px;
         width: 30px;
         margin-top: 15px;
-        color: rgba(255, 255, 255, 0.397);
         border: none;
-        cursor: pointer;
         display: none;
+        z-index: 100;
+        cursor: pointer;
     }
 
-    .hidden i{
+    .hidden i {
         font-size: 18px;
     }
 
@@ -564,6 +573,7 @@
         left: 5%;
         display: flex;
         top: 18px;
+        cursor: pointer;
     }
 
     .elements_list {
@@ -587,18 +597,51 @@
         top: 0;
         display: flex;
         flex-direction: column;
-        background-color: #001c2b;
+        background-color: #021722;
         z-index: 2000;
-        padding-left: 10%;
-        width: 30%;
-        padding-top: 8%;
+        padding-left: 5%;
+        width: 40%;
+        padding-top: 30px;
         height: 100%;
         display: none;
         border-right: solid 1px #ffffff5d;
     }
 
+    .info_ads {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+        opacity: 0.7;
+    }
+
+    .info_ads p {
+        font-size: 12px;
+    }
+
+    .info_ads .p002 {
+        font-size: 10px;
+        margin-left: 10%;
+        opacity: 0.5;
+    }
+
+    .info_ads img {
+        margin-left: 10px;
+        width: 50px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: -10px;
+    }
+
     .nav_list li {
         margin-bottom: 30px;
+    }
+
+    .nav_list li a i {
+        margin-right: 15px;
     }
 
     .nav_list li a {
@@ -606,39 +649,11 @@
         display: flex;
         align-items: center;
     }
-    .nav_list li a img {
-        width: 18px;
-    }
 
 
 
     .nav_list li a:active {
         opacity: 0.5;
-        border-bottom: solid 1px #ffffff;
-    }
-
-    .closee {
-        width: 25px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
-        border: solid 1px #fff;
-        border-radius: 5px;
-    }
-
-    .closee:active {
-        background-color: #ffffff;
-        opacity: 0.5;
-    }
-
-    .closee i {
-        font-size: 25px;
-        display: flex;
-    }
-
-    .closee i:active {
-        color: #000000;
     }
 
     .nav-appear {
@@ -923,7 +938,6 @@
         max-width: 94%;
         margin-left: 2.5%;
         margin-right: 2.5%;
-        border: solid 1px #008cff;
         border-radius: 10px;
         height: auto;
         object-fit: contain;
@@ -995,12 +1009,33 @@
 
     .carousel-item img {
         max-width: 94%;
-        border: solid 1px #00a6ff;
         border-radius: 5px;
         height: auto;
         object-fit: contain;
         position: relative;
     }
+
+    .sec001 {
+        margin-top: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #ffffff1c;
+    }
+
+    .sec001 h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .fasec1 {
+        color: #ff7300;
+        border-bottom: 0.5px solid;
+    }
+
+    .sec001 p {
+        text-align: justify;
+    }
+
 
     .Grade_curricular {
         margin-top: 130px;
@@ -1269,6 +1304,7 @@
         border: none;
         font-size: 17px;
     }
+
     footer {
         background-color: #070d22;
         height: 180px;
@@ -1284,31 +1320,55 @@
 
     .sociais {
         width: 50px;
+        height: 50px;
         display: flex;
+        align-items: center;
         justify-content: space-around;
     }
 
+
+
     .sociais i {
         display: grid;
-        color: #000000;
-        background-color: #ffffff;
+        background-color: #fff;
         width: 35px;
         height: 35px;
         font-size: 20px;
         place-items: center;
         border-radius: 50%;
         text-decoration: none;
+        background-size: 200% 100%;
+        animation: mov2 6s infinite;
     }
 
     .sociais i:active {
         opacity: 0.8;
         color: #0b9bd4;
+        background-color: #ffffff59;
     }
 
     .footer_top {
-        background-color: #126383;
+        background: linear-gradient(90deg, #00ffd5, #006eff, #00ffd5);
         width: 100%;
         height: 10px;
+        background-size: 200% 100%;
+        animation: mov 6s linear infinite;
+    }
+    
+    @keyframes mov {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 200% 50%;
+        }
+    }
+
+    @keyframes mov2 {
+        0%{ color: #00ffd5;}
+        48%{ color: #006eff;}
+        100%{ color: #00ffd5;}
+        
     }
 
     footer p {

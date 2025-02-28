@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,15 +36,18 @@
                     <ul class="nao_ordenada">
                         <li class="list_itens"><a class="inicio_text" href="index.html">Início</a></li>
                         <li class="list_itens"><a href="SubPaginas/noticias.html">Notícias</a></li>
-                        <li class="list_itens"><a href="/SubPaginas/sobre.html">Sobre</a></li>
+                        <li class="list_itens"><a href="/SubPaginas/projetos.html">Projetos</a></li>
                         <li class="list_itens"><a href="/SubPaginas/atletica.html">Atlética</a></li>
                         <li class="list_itens"><a target="_blank" rel="sternal"
                                 href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
+
+
                 </div>
                 <div class="input_d" id="inputd">
                     <form action="" class="form_input" onclick="inp_variavel()">
-                        <input oninput="acionar_input()" id="input_alternativo1" type="text" placeholder="Buscar..." name="meuInput">
+                        <input oninput="acionar_input()" id="input_alternativo1" type="text" placeholder="Buscar..."
+                            name="meuInput">
                         <div onclick="limp_text()" class="excluir-x" id="limp_text">
                             <i class="bi bi-x">
                             </i>
@@ -69,17 +73,26 @@
         <div class="list_cell">
             <nav>
                 <ul class="nav_list" id="nav_list">
-                    <div class="closee" onclick="click_menu()">
-                        <i class="bi bi-x"></i>
+
+                    <li><a onclick="click_menu()" href="index.html"><i class="fa-solid fa-house"></i>Início</a></li>
+                    <li><a onclick="click_menu()" href="SubPaginas/noticias.html"><i class="fas fa-newspaper"></i>
+                            Notícias</a></li>
+                    <li><a onclick="click_menu()" href="SubPaginas/projetos.html"><i
+                                class="fa-solid fa-diagram-project"></i>Projetos</a></li>
+                    <li><a onclick="click_menu()" href="SubPaginas/atletica.html"><i class="fas fa-users"></i>
+                            Atlética</a></li>
+                    <li><a onclick="click_menu()" target="_blank" rel="sternal" href="https://serradocarmo.edu.br"><i
+                                class="fas fa-university"></i>
+                            Fasec</a></li>
+
+                    <div class="info_ads">
+                        <img src="imagens/ads-non-nome.svg" alt="">
+                        <p>Ads - Fasec</p>
+                        <p class="p002">&copy; 2025</p>
                     </div>
 
-                    <li><a onclick="click_menu()" href="index.html">Início</a></li>
-                    <li><a onclick="click_menu()" href="SubPaginas/noticias.html">Notícias</a></li>
-                    <li><a onclick="click_menu()" href="SubPaginas/sobre.html">Sobre</a></li>
-                    <li><a onclick="click_menu()" href="SubPaginas/atletica.html">Atlética</a></li>
-                    <li><a onclick="click_menu()" target="_blank" rel="sternal"
-                            href="https://serradocarmo.edu.br">Fasec</a></li>
                 </ul>
+
             </nav>
         </div>
 
@@ -88,7 +101,6 @@
         <div class="menu-background" id="menuBackground" onclick="click_menu()"></div>
 
         <div class="carousel">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <div class="carousel-slide">
                 <div class="carousel-item">
                     <a href="SubPaginas/atletica.html"><img src="imagens/Ads - Fasec 3.jpg" alt="Imagem 3">
@@ -111,13 +123,19 @@
                     </a>
                 </div>
             </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
             <div class="carousel-indicators">
                 <span class="dot" onclick="moveSlideTo(0)"></span>
                 <span class="dot" onclick="moveSlideTo(1)"></span>
                 <span class="dot" onclick="moveSlideTo(2)"></span>
             </div>
         </div>
+
+        <section class="sec001">
+            <div>
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindo ao site oficial da turma de Análise e Desenvolvimento de Sistemas (ADS) da <span><a class="fasec1" href="https://serradocarmo.edu.br">Faculdade Serra do Carmo.</a></span> Aqui, celebramos o aprendizado, a inovação e o espírito colaborativo que definem nosso curso. Nossa turma é composta por futuros desenvolvedores, analistas e visionários da tecnologia, comprometidos em criar soluções impactantes para os desafios do mundo digital.</p>
+            </div>
+        </section>
 
         <section class="Grade_curricular">
 
@@ -151,7 +169,7 @@
                 </div>
             </div>
 
-        
+
             <div data-aos="zoom-in" class="grade-prin">
 
                 <div class="matriz_curricular">
@@ -167,12 +185,24 @@
                 </div>
 
                 <div class="periodos">
-                    <div id="p1" class="div-style cor1" onclick="toggleColor('p1')"><p>1&ordm; Período</p></div>
-                    <div id="p2" class="div-style cor2" onclick="toggleColor('p2')"><p>2&ordm; Período</p></div>
-                    <div id="p3" class="div-style cor2" onclick="toggleColor('p3')"><p>3&ordm; Período</p></div>
-                    <div id="p4" class="div-style cor2" onclick="toggleColor('p4')"><p>4&ordm; Período</p></div>
-                    <div id="p5" class="div-style cor2" onclick="toggleColor('p5')"><p>5&ordm; Período</p></div>
-                    <div id="p6" class="div-style cor2" onclick="toggleColor('p6')"><p>6&ordm; Período</p></div>
+                    <div id="p1" class="div-style cor1" onclick="toggleColor('p1')">
+                        <p>1&ordm; Período</p>
+                    </div>
+                    <div id="p2" class="div-style cor2" onclick="toggleColor('p2')">
+                        <p>2&ordm; Período</p>
+                    </div>
+                    <div id="p3" class="div-style cor2" onclick="toggleColor('p3')">
+                        <p>3&ordm; Período</p>
+                    </div>
+                    <div id="p4" class="div-style cor2" onclick="toggleColor('p4')">
+                        <p>4&ordm; Período</p>
+                    </div>
+                    <div id="p5" class="div-style cor2" onclick="toggleColor('p5')">
+                        <p>5&ordm; Período</p>
+                    </div>
+                    <div id="p6" class="div-style cor2" onclick="toggleColor('p6')">
+                        <p>6&ordm; Período</p>
+                    </div>
                 </div>
 
                 <div class="info_geral">
@@ -295,7 +325,7 @@
             <button class="voltar_set2" id="voltar_set" onclick="voltar2()">
                 <i class="bi bi-arrow-left"></i>
             </button>
-            
+
             <div class="sec_pesquisaa" id="sec_pesquisa">
                 <div class="input_pesquisa">
                     <form class="form_input2" id="form2">

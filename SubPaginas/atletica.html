@@ -31,7 +31,7 @@
                     <ul class="nao_ordenada">
                         <li class="list_itens"><a href="../index.html">Início</a></li>
                         <li class="list_itens"><a href="noticias.html">Notícias</a></li>
-                        <li class="list_itens"><a href="sobre.html">Sobre</a></li>
+                        <li class="list_itens"><a href="projetos.html">Projetos</a></li>
                         <li class="list_itens"><a class="atletica_text" href="atletica.html">Atlética</a></li>
                         <li class="list_itens"><a target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
                     </ul>
@@ -65,14 +65,7 @@
                     <form class="form_input2" id="form2">
 
                         <input oninput="acionar_input2()" id="input_alternativo2" type="text" placeholder="Buscar...">
-                        <div onclick="limp_text2()" class="excluir-x2" id="limp_text2">
-                            <i class="bi bi-x">
-                            </i>
-                        </div>
-
-                        <button type="submit" onclick="buscar()" id="buscar2">
-                            <i class="fas fa-search"></i>
-                        </button>
+            
                     </form>
 
                 </div>
@@ -88,6 +81,17 @@
                     </div>
                 </div>
             </section>
+
+            <div class="pesqui">
+                <div onclick="limp_text2()" class="excluir-x2" id="limp_text2">
+                    <i class="bi bi-x">
+                    </i>
+                </div>
+
+                <button type="submit" onclick="buscar()" id="buscar2" class="hidden">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </div>
 
 
@@ -103,15 +107,14 @@
         <div class="list_cell">
             <nav>
                 <ul class="nav_list" id="nav_list">
-                    <div class="closee" onclick="click_menu()">
-                        <i class="bi bi-x"></i>
-                    </div>
-
-                    <li><a onclick="click_menu()" href="../index.html">Início</a></li>
-                    <li><a onclick="click_menu()" href="noticias.html">Notícias</a></li>
-                    <li><a onclick="click_menu()" href="sobre.html">Sobre</a></li>
-                    <li><a onclick="click_menu()" href="atletica.html">Atlética</a></li>
-                    <li><a onclick="click_menu()" target="_blank" rel="sternal" href="https://serradocarmo.edu.br">Fasec</a></li>
+                    <li><a onclick="click_menu()" href="../index.html"><i class="fa-solid fa-house"></i>Início</a></li>
+                    <li><a onclick="click_menu()" href="noticias.html"><i class="fas fa-newspaper"></i>
+                        Notícias</a></li>
+                    <li><a onclick="click_menu()" href="projetos.html"><i class="fa-solid fa-diagram-project"></i>Projetos</a></li>
+                    <li><a onclick="click_menu()" href="atletica.html"><i class="fas fa-users"></i>
+                        Atlética</a></li>
+                    <li><a onclick="click_menu()" target="_blank" rel="sternal" href="https://serradocarmo.edu.br"><i class="fas fa-university"></i>
+                        Fasec</a></li>
                 </ul>
             </nav>
         </div>

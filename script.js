@@ -109,7 +109,7 @@ function limp_text2() {
 
 function buscar() {
     const inputField = document.getElementById("input_alternativo2");
-    alert("Buscando: " + inputField.value); 
+    alert("Infelizmente esse recurso ainda não está disponível😉"); 
 }
 
 
