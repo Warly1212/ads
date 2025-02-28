@@ -356,7 +356,7 @@
 
     .results {
         width: 100%;
-        top: 500px;
+        top: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
