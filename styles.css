@@ -643,6 +643,10 @@
     .nav_list li a i {
         margin-right: 15px;
     }
+    
+    #ix02 {
+        margin-right: 11px;
+    }
 
     .nav_list li a {
         font-size: 18px;
@@ -1030,6 +1034,7 @@
     .fasec1 {
         color: #ff7300;
         border-bottom: 0.5px solid;
+        cursor: pointer;
     }
 
     .sec001 p {
