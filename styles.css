@@ -1022,13 +1022,13 @@
     .sec001 {
         margin-top: 150px;
         padding-left: 20px;
-        padding-right: 20px;
-        background-color: #ffffff1c;
+        padding-right: 20px
     }
 
     .sec001 h2 {
         text-align: center;
         margin-bottom: 15px;
+        color: #ff7300;
     }
 
     .fasec1 {
